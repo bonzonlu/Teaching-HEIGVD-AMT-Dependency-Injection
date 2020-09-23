@@ -12,6 +12,13 @@ public class Fisherman {
   private Bait bait;
   private Boat boat;
 
+  public Fisherman() {
+    boots = new Boots();
+    boat = new Boat();
+    bait = new Bait();
+    fishingRod = new FishingRod();
+  }
+
   public Fish goGetFish() {
     boots.wear();
     boat.putOnWater();
